@@ -1,0 +1,9 @@
+
+
+#node_moudles 
+node_modules
+
+# dotenv
+.env
+
+

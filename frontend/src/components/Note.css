@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.main-container{
+    background-image: url("../../public/v788-mynt-87.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+    width: 100%;
+    background-color: rgb(196, 196, 183);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(25, 21, 21);
+    gap:30px;
+    overflow-y: auto; 
+}
+.main-container h2{
+    color: rgb(78, 70, 70);
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
+.main-container button{
+    height: 2rem;
+    width: 6rem;
+    background-color: rgb(228, 106, 203);
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: rgb(222, 210, 211);
+}
+.notes-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    padding:10px;
+}
+.notes-container button{
+    height: 3rem;
+    width: 5rem;
+    background-color: rgb(197, 95, 175);
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: rgb(221, 230, 228);
+}
+.noteForm{
+    height: 40rem;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(103, 92, 92);
+    gap:20px;
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 7px 7px 8px #888888;
+
+}
+.noteForm h4{
+    font-weight: 900;
+    font-size: xx-large;
+    font-style: italic;
+    color: rgb(207, 75, 137);
+}
+.noteForm input{
+    background-color: rgb(236, 200, 219);
+    width: 20rem;
+    height: 2.5rem;
+    padding: 35px;
+    margin: 3px;
+    border-radius: 1rem;
+}
+.notes-container button:hover{
+    background-color: rgb(209, 118, 195);
+    transition: margin-right 2s ease-in-out 0.5s;
+}
+.noteForm button:hover{
+    background-color: rgb(153, 165, 165);
+    transition: margin-right 2s ease-in-out 0.5s;
+}
+.main-container .logout-button{
+    height: 60px;
+    background-color: rgb(186, 62, 62);
+    align-self: flex-end;
+    margin:10px;
+}
+.main-container .logout-button:hover{
+    background-color: rgb(178, 97, 97);
+    transition: margin-left 2s ease-out 1s;
+}
+
+
+
