@@ -135,7 +135,8 @@ npm run dev
 
 ## 👤 Author
 
-**Ismael**
+
+SNEHA GOYAL
 Aspiring Full Stack Developer
 
 Built as a learning project to understand real-world MERN authentication and CRUD workflows.
