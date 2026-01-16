@@ -2,8 +2,10 @@ import axios from "axios";
 
 console.log("✅ axiosInstance loaded");
 
+const apiURL = import.meta.env.VITE_BACKEND_URL
+
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: apiURL+"/api",
 });
 
 axiosInstance.interceptors.request.use(

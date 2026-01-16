@@ -31,7 +31,7 @@ const apiURL = import.meta.env.VITE_BACKEND_URL
     }
 
     try{
-    const res = await axios.post(apiURL+`auth/${signup?"signup":"login"}`,user);
+    const res = await axios.post(apiURL+`/api/auth/${signup?"signup":"login"}`,user);
 
     if(signup){
       alert(res.data.message);
