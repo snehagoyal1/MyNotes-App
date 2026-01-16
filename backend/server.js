@@ -6,6 +6,8 @@ const noteRoutes = require("./Routes/noteRoutes");
 const cors = require("cors");
 const app = express();
 
+const PORT = process.env.PORT || 5000;
+
 app.use(express.json());
 
 app.use(cors());
@@ -19,6 +21,6 @@ mongoose
 app.use("/api/auth", authRoutes);
 app.use("/api/notes", noteRoutes);
 
-app.listen(5000, () => {
-  console.log("Working....");
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
