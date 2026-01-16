@@ -1,45 +1,42 @@
-📝 MyNotes – MERN Stack Notes Application
+# 📝 MyNotes – MERN Stack Notes Application
 
-MyNotes is a full-stack notes management application built using the MERN stack (MongoDB, Express, React, Node.js). It allows users to securely create, edit, delete, search, and filter notes with JWT-based authentication.
+MyNotes is a full-stack notes management application built using the **MERN stack (MongoDB, Express, React, Node.js)**. It allows users to securely create, edit, delete, search, and filter notes with **JWT-based authentication**.
 
-🚀 Features:
+---
 
-🔐 User Authentication (Signup / Login / Logout) using JWT
+## 🚀 Features
 
-🗂 Create, Read, Update, Delete (CRUD) Notes
+* 🔐 User Authentication (Signup / Login / Logout) using JWT
+* 🗂 Create, Read, Update, Delete (CRUD) Notes
+* 🔎 Search notes by title or content
+* 🎯 Filter & sort notes (A–Z, Z–A, newest, oldest)
+* 🛡 Protected routes (only logged-in users can access notes)
+* 📱 Responsive and clean UI
 
-🔎 Search notes by title or content
+---
 
-🎯 Filter & sort notes (A–Z, Z–A, newest, oldest)
+## 🛠 Tech Stack
 
-🛡 Protected routes (only logged-in users can access notes)
+### Frontend
 
-📱 Responsive and clean UI
+* React (Vite)
+* Axios
+* React Router
+* CSS
 
-🛠 Tech Stack:
-Frontend -
+### Backend
 
-React (Vite)
+* Node.js
+* Express.js
+* MongoDB (Mongoose)
+* JWT (jsonwebtoken)
+* bcryptjs
 
-Axios
+---
 
-React Router
+## 📂 Project Structure
 
-CSS
-
-Backend -
-
-Node.js
-
-Express.js
-
-MongoDB (Mongoose)
-
-JWT (jsonwebtoken)
-
-bcryptjs
-
-📂 Project Structure
+```
 MyNotes/
 │
 ├── backend/
@@ -66,70 +63,80 @@ MyNotes/
 │   │   └── main.jsx
 │
 └── README.md
+```
 
-🔐 Authentication Flow :
+---
 
-User registers with email & password
+## 🔐 Authentication Flow
 
-Password is hashed using bcrypt
+1. User registers with email & password
+2. Password is hashed using **bcrypt**
+3. On login, a **JWT token** is generated
+4. Token is stored in `localStorage`
+5. Axios interceptor attaches token to every request
+6. Backend middleware validates JWT and protects routes
 
-On login, a JWT token is generated
+---
 
-Token is stored in localStorage
+## ⚙️ Installation & Setup
 
-Axios interceptor attaches token to every request
+### 1️⃣ Clone the repository
 
-Backend middleware validates JWT and protects routes
-
-⚙️ Installation & Setup :
-1️⃣ Clone the repository
+```bash
 git clone https://github.com/your-username/mynotes.git
 cd mynotes
+```
 
-2️⃣ Backend Setup
+### 2️⃣ Backend Setup
+
+```bash
 cd backend
 npm install
 node server.js
+```
 
+Update MongoDB connection string in `server.js`.
 
-Update MongoDB connection string in server.js.
+### 3️⃣ Frontend Setup
 
-3️⃣ Frontend Setup
+```bash
 cd frontend
 npm install
 npm run dev
+```
 
-🌐 API Endpoints :
-Auth
+---
 
-POST /api/auth/signup – Register user
+## 🌐 API Endpoints
 
-POST /api/auth/login – Login user
+### Auth
 
-Notes (Protected)
+* `POST /api/auth/signup` – Register user
+* `POST /api/auth/login` – Login user
 
-GET /api/notes/getNotes – Fetch notes
+### Notes (Protected)
 
-POST /api/notes/notesAdd – Add note
+* `GET /api/notes/getNotes` – Fetch notes
+* `POST /api/notes/notesAdd` – Add note
+* `POST /api/notes/notesEdit` – Edit note
+* `POST /api/notes/notesDelete` – Delete note
 
-POST /api/notes/notesEdit – Edit note
+---
 
-POST /api/notes/notesDelete – Delete note
+## 🧠 Learning Outcomes
 
-🧠 Learning Outcomes
+* Implemented secure JWT authentication
+* Used Axios interceptors for token handling
+* Built protected backend routes with middleware
+* Designed a full MERN-stack CRUD application
+* Debugged real-world authentication issues
 
-Implemented secure JWT authentication
+---
 
-Used Axios interceptors for token handling
+## 👤 Author
 
-Built protected backend routes with middleware
 
-Designed a full MERN-stack CRUD application
-
-Debugged real-world authentication issues
-
-👤 Author :
-
-Sneha Goyal
+SNEHA GOYAL
 Aspiring Full Stack Developer
+
 Built as a learning project to understand real-world MERN authentication and CRUD workflows.
